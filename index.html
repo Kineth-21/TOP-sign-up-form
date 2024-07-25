@@ -1,12 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Sign up</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Sign up</title>
+    </head>
+    <body>
+
+        <div class="background">
+            <div class="logocontainer">
+                <img src="images/odin.jpg" alt="logo" class="logo">
+                <div>ODIN</div>
+            </div>
+            <div class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank" rel="noopener noreferrer">Unsplash</a></div>
+        </div>
+
+        <div class="rightContainer">
+            <div>This is not a real online service! You know you need something like this in your life to help you 
+                realise your deepest dreams. Sign up now to get started.
+            </div>
+            <div>
+                You know you want to.
+            </div>
+            <form action="test" method="post">
+                
+                <fieldset>
+                    <caption>Let's do this!</caption>
+                    <div class="firstRow">
+                        <div>
+                            <label for="firstName">FIRST NAME</label><br>
+                            <input type="text" id="firstName" name="first_name" placeholder="John" pattern="^[a-zA-Z]+$">
+                        </div>
+                        <div>
+                            <label for="lastName">LAST NAME</label><br>
+                            <input type="text" name="last_name" id="lastName" placeholder="Doe" pattern="^[a-zA-Z]+$">
+                        </div>
+                    </div>
+                    <div class="secondRow">
+                        <div>
+                            <label for="email">EMAIL</label><br>
+                            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                        </div>
+                        <div>
+                            <label for="phoneNumber">PHONE NUMBER</label><br>
+                            <input type="text" name="phone_number" id="phoneNumber" minlength="8" maxlength="8" part="\d{8}" placeholder="88888888">
+                        </div>
+                    </div>
+                    <div class="thirdRow">
+                        <div>
+                            <label for="password1">PASSWORD</label><br>
+                            <input type="password" name="password" id="password1" minlength="8">
+                        </div>
+                        <div>
+                            <label for="password2">CONFIRM PASSWORD</label><br>
+                            <input type="password" name="password" id="password2" minlength="8">
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" id="createAcc">Create Account</button>
+                
+            </form>
+            <div class="login">Already have an account? <a href="">Log in</a></div>
+        </div>
+
+    </body>
+    </html>
